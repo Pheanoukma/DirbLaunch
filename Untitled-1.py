@@ -1,9 +1,9 @@
 import os
+import socket
 import sys 
 import time as t
 from time import sleep
 from rich.console import Console
-import socket 
 from colorama import init, Fore, Back
 init()
 banner = """
