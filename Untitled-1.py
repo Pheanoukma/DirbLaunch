@@ -1,6 +1,4 @@
-
-
-import os 
+import os
 import sys 
 import time as t
 from time import sleep
@@ -9,15 +7,14 @@ import socket
 from colorama import init, Fore, Back
 init()
 banner = """
-  StockTool inc , DirbLaunch
+  StockTool       inc , DirbLaunch
 -----Please Enter the url-----
 
 
 """
 print(banner)
-doshost = str(input(" Enter A Web :" ))
-wordlist = str(input(" Enter the wordlist dir : " ))
-
+doshost = str(input(" Enter the website for dirb'in "))
+wordlist = str(input("Wordlist [yeah enter because im cool B)]"))
 C = socket.gethostbyname(doshost)
 banner = """
 Launching attack...
@@ -32,7 +29,7 @@ with console.status("[bold green]Working on the files...") as status:
         task = tasks.pop(0)
         sleep(1)
         console.log(f"{task} complete")
-print("File loading and initializing....") 
+print("File loading and initializing....x   ") 
 os.system('clear')
 os.system(f' sudo dirb {C} {wordlist}')
 print("Dirb launched.")
